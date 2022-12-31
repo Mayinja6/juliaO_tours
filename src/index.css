@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+@layer components {
+  .hikelink__btn {
+    @apply text-[16px] font-semibold leading-[1] py-[10px] px-[20px] bg-primary_clr text-white inline-block relative transition-all duration-300 ease-linear hover:bg-secondary_clr cursor-pointer;
+  }
+
+  .hikelink__btn-rev {
+    @apply text-[12px] sm:text-[14px] md:text-[16px] font-semibold leading-[1] py-[10px] px-[20px] md:px-[25px] hover:bg-primary_clr text-white inline-block relative transition-all duration-300 ease-linear bg-secondary_clr cursor-pointer;
+  }
+
+  .my__space {
+    @apply px-4 sm:px-7 md:px-10 lg:px-[96px];
+  }
+
+  .link__hover {
+    @apply duration-300 ease-in-out transition-all hover:text-secondary_clr cursor-pointer;
+  }
+
+  .hikelink__subtitle {
+    @apply text-primary_clr text-[13px] font-semibold relative pl-[45px] md:pl-[80px] before:absolute before:w-[40px] md:before:w-[70px] before:h-[2px] before:top-1/2 before:left-[0px] before:bg-primary_clr font-[poppins] mb-3;
+  }
+
+  .hikelink__title {
+    @apply text-[24px] sm:text-[30px] md:text-[42px] lg:text-[48px] mb-[15px] font-black;
+  }
+
+  .day_overlay_before {
+    @apply before:absolute before:bg-day_overlay_clr before:content-[''] before:top-0 before:left-0 before:right-0 before:bottom-0 before:w-full before:h-full before:opacity-[0.8];
+  }
+
+  .night_overlay_before {
+    @apply before:absolute before:bg-night_overlay_clr before:content-[''] before:top-0 before:left-0 before:right-0 before:bottom-0 before:w-full before:h-full before:opacity-[0.8];
+  }
+
+  .travele__tour > .travele__tour_img {
+    transform: scale(0.99, 0.99);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .travele__tour:hover > .travele__tour_img {
+    transform: scale(1, 1);
+  }
+  .travele__tour:hover > .travele__tour_img::before {
+    opacity: 0.45;
+  }
+
+  .header__link ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s ease-in-out;
+  }
+  .header__link:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+}
