@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#383838] text-[13px] py-8 sm:py-[80px] text-[#f3f3f3] my__space flex justify-between w-full flex-wrap">
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4 lg:p-5 relative">
         <h3 className="uppercase font-bold text-[14px] mb-5 pl-3 mx-auto relative before:bg-secondary_clr before:-ml-3 before:absolute before:content-[''] before before:h-full before:w-[3px]">
-          About Julia O
+          About Juria O
         </h3>
         <p className="text-[12px] md:text-[13px] opacity-90 mb-2">
           Welcome to our tour agency website! We specialize in offering unique
